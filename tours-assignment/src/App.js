@@ -1,32 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import TourBox from './Components/TourBox';
 import ErrorPage from './Components/ErrorPage';
 import LoadingPage from './Components/LoadingPage';
 
-const url = "https://course-api.com/react-tours-project";
+let url = "https://course-api.com/react-tours-project";
+let name;
 
 function App() {
-    const [destination, setDestination] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
 
-        fetch(url)
-        .then(response => {
-            console.log('Destination');
-            const name = response.json();
-            setDestination(name);
-            console.log(name);  
-        })
-        .catch(err => {
-            console.log(err);
-        })
-    
-    useEffect(() => {
-        effect
-        return () => {
-            cleanup
-        }
-    }, [])
+    fetch(url)
+    .then(response => {
+        console.log('Tour');
+        name = response.json();
+        console.log(name);  
+    })
+    .catch(err => {
+        console.log(err);
+    })
 
     if (isLoading === true) {
         return <LoadingPage />
@@ -34,13 +26,13 @@ function App() {
     if (isError === true) {
         return <ErrorPage />
     }
+    console.log('name2');
+    console.log(name);
 
     return (
         <>
             <div>
-                {destination.map((card) => {
-                    return <TourBox data={card} key={card.id}/>
-                })}
+                <TourBox data={name} /* key={destination.id} *//>
             </div>
         </>
     )

@@ -1,11 +1,17 @@
 import React from 'react'
 
 function TourBox({data}) {
-    // const {  }
+    // const { id, image, info, name, price } = data;
+    console.log('Destination');
+    console.log(data);
 
     return (
         <div>
-            {data}
+            {/* <p>{id}</p>
+            <p>{image}</p>
+            <p>{info}</p>
+            <p>{name}</p>
+            <p>{price}</p> */}
         </div>
     )
 }
