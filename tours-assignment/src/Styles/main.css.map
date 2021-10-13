@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["pages/_app.scss","main.scss","components/_tourBox.scss"],"names":[],"mappings":"AAAA;EACI,2BAAA;ACCJ;;ADCA;EACI,kBAAA;ACEJ;;ACJA;EACI,uBAAA;EACA,aAAA;EACA,6BAAA;EACA,eAAA;EACA,cAAA;EACA,UAAA;EACA,YATQ;ADgBZ;;ACLA;EACI,oBAAA;EACA,sBAAA;EACA,gBAAA;EACA,SAAA;ADQJ;;ACNA;EACI,WAAA;EACA,aAAA;EACA,cAAA;EACA,YArBQ;EAsBR,aAAA;EACA,UAAA;EACA,yBAAA;ADSJ","file":"main.css"}

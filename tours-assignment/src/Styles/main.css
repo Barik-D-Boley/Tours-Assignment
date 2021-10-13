@@ -1,2 +1,34 @@
+body {
+  background-color: lightgray;
+}
 
-/*# sourceMappingURL=main.css.map *//*# sourceMappingURL=main.css.map */
+#title {
+  text-align: center;
+}
+
+.cityCards {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 60rem;
+}
+
+.cardContainer {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1.8rem 0;
+  margin: 0;
+}
+
+.image {
+  width: 100%;
+  display: flex;
+  flex: 1 1 100%;
+  width: 60rem;
+  height: 30rem;
+  padding: 0;
+  background-color: #ffdbdb;
+}/*# sourceMappingURL=main.css.map */
