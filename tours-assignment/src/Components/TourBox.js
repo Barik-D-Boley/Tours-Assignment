@@ -15,24 +15,26 @@ function TourBox({data}) {
         <div className='cardContainer' id={id}>
             <img className='image' src={image} alt={name} />
             <div className='textContainer'>
-                <p className='tourName'>{name}</p>
-                <p className='price'>${price}</p>
+                <div class='titleContainer'>
+                    <p className='tourName'>{name}</p>
+                    <p className='price'>${price}</p>
+                </div>
                 {readMore ?
-                    <span>
+                    <>
                         <p className='info'>{info}</p>
-                        <a className='readMore' onClick={() => setReadMore(false)}>Read Less</a>
-                    </span>
+                        <a className='readMore' onClick={() => setReadMore(false)}> Read Less</a>
+                    </>
                     :
-                    <span>
+                    <>
                         <p className='info'>{info.split(' ').splice(0, 35).map((word) => {
                             return (
                                 word + ' '
                             )
                         })}</p>
                         <a className='readMore' onClick={() => setReadMore(true)}> <p className='info'>...</p> Read More</a>
-                    </span>
+                    </>
                 }
-                <a className='notInterested' onClick={() => removeCard(id)}>Not Interested</a>
+                <div className='notInterestedDiv'><a className='notInterested' onClick={() => removeCard(id)}>Not Interested</a></div>
             </div>
         </div>
     )

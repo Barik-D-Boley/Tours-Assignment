@@ -54,22 +54,30 @@ $container-border-radius: .5rem;
             .info {
                 color: $textBlue;
                 font-size: $font-size/1.05;
+                display: inline;
             }
             .readMore {
                 color: $priceBlue;
                 font-size: $font-size*1.05;
+                display: inline;
                 &:hover {
                     cursor: pointer;
                 }
             }
-            .notInterested {
-                color: $notInterestedRed;
-                border: .1rem solid $notInterestedRed;
-                border-radius: .2rem;
-                padding: .06rem 3rem;
-                font-size: $font-size*1.1;
-                margin: 0 auto;
-                &:hover {
-                    cursor: pointer;
-                }
+            .notInterestedDiv {
+                display: flex;
+                margin: 1.5rem 0 0.8rem 0;
             }
+                .notInterested {
+                    color: $notInterestedRed;
+                    border: .1rem solid $notInterestedRed;
+                    border-radius: .2rem;
+                    padding: .06rem 3.5rem;
+                    font-size: $font-size*1.1;
+                    margin: 0 auto;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $notInterestedRed;
+                        color: $cityCards;
+                    }
+                }

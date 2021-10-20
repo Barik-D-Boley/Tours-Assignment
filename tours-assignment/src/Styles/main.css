@@ -65,24 +65,33 @@ body {
 .info {
   color: #437dba;
   font-size: 1.2380952381rem;
+  display: inline;
 }
 
 .readMore {
   color: #489dd0;
   font-size: 1.365rem;
+  display: inline;
 }
 .readMore:hover {
   cursor: pointer;
+}
+
+.notInterestedDiv {
+  display: flex;
+  margin: 1.5rem 0 0.8rem 0;
 }
 
 .notInterested {
   color: #a20808;
   border: 0.1rem solid #a20808;
   border-radius: 0.2rem;
-  padding: 0.06rem 3rem;
+  padding: 0.06rem 3.5rem;
   font-size: 1.43rem;
   margin: 0 auto;
 }
 .notInterested:hover {
   cursor: pointer;
+  background-color: #a20808;
+  color: #dcdad7;
 }/*# sourceMappingURL=main.css.map */
