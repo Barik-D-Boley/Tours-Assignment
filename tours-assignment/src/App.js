@@ -14,7 +14,7 @@ function App() {
     const getCity = async () => {
         const response = await fetch(url);
         const city = await response.json();
-        // console.log(city);
+        console.log(city);
         setCity(city);
     }
 
@@ -44,7 +44,7 @@ function App() {
         return <ErrorPage />
     }
 
-    // console.log(city);
+    console.log(city);
     return (
         <>
             <h1 id='title'>Our Tours</h1>

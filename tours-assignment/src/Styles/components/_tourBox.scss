@@ -1,7 +1,10 @@
-$img-width: 60rem;
+@import '../theme/defaultTheme';
+
+$img-width: 50rem;
+$font-size: 1.3rem;
+$container-border-radius: .5rem;
 
 .cityCards {
-    background-color: white;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -9,18 +12,64 @@ $img-width: 60rem;
     padding: 0;
     width: $img-width;
 }
-.cardContainer {
-    display: inline-flex;
-    flex-direction: column;
-    margin: $img-width*0.03 0;
-    margin: 0;
-}
-.image {
-    width: 100%;
-    display: flex;
-    flex: 1 1 100%;
-    width: $img-width;
-    height: $img-width/2;
-    padding: 0;
-    background-color: #ffdbdb;
-}
+    .cardContainer {
+        background-color: $cityCards;
+        display: inline-flex;
+        flex-direction: column;
+        margin: $img-width*0.03 0;
+        margin: 0;
+        box-shadow: 0 0 2rem darkgray;
+        border-radius: $container-border-radius;
+        margin-bottom: 3rem;
+    }
+        .image {
+            width: 100%;
+            display: flex;
+            object-fit: cover;
+            width: $img-width;
+            height: $img-width/2;
+            padding: 0;
+            border-radius: $container-border-radius $container-border-radius 0 0;
+        }
+        .textContainer {
+            padding: 1rem 2rem 1.5rem 2rem;
+        }
+            .tourName {
+                color: $offBlack;
+                font-weight: 700;
+                font-size: $font-size*1.08;
+                display: inline-flex;
+            }
+            .price {
+                color: $priceBlue;
+                background-color: $bodyBackground;
+                font-weight: 700;
+                font-size: $font-size;
+                display: inline-flex;
+                float: right;
+                letter-spacing: .1rem;
+                padding: .3rem;
+                border-radius: .25rem;
+            }
+            .info {
+                color: $textBlue;
+                font-size: $font-size/1.05;
+            }
+            .readMore {
+                color: $priceBlue;
+                font-size: $font-size*1.05;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .notInterested {
+                color: $notInterestedRed;
+                border: .1rem solid $notInterestedRed;
+                border-radius: .2rem;
+                padding: .06rem 3rem;
+                font-size: $font-size*1.1;
+                margin: 0 auto;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
