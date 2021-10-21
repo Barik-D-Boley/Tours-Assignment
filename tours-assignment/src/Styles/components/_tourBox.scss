@@ -4,7 +4,7 @@ $img-width: 50rem;
 $font-size: 1.3rem;
 $container-border-radius: .5rem;
 
-.cityCards {
+.cityCards { // The container for all the tour cards
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@ $container-border-radius: .5rem;
     padding: 0;
     width: $img-width;
 }
-    .cardContainer {
+    .cardContainer { // The container for each individual tour card 
         background-color: $cityCards;
         display: inline-flex;
         flex-direction: column;
@@ -22,7 +22,7 @@ $container-border-radius: .5rem;
         border-radius: $container-border-radius;
         margin-bottom: 3rem;
     }
-        .image {
+        .image { // CSS for each image
             width: 100%;
             display: flex;
             object-fit: cover;
@@ -31,16 +31,16 @@ $container-border-radius: .5rem;
             padding: 0;
             border-radius: $container-border-radius $container-border-radius 0 0;
         }
-        .textContainer {
+        .textContainer { // The container for all the text in each tour card
             padding: 1rem 2rem 1.5rem 2rem;
         }
-            .tourName {
+            .tourName { // CSS for the name of the tour
                 color: $offBlack;
                 font-weight: 700;
                 font-size: $font-size*1.08;
                 display: inline-flex;
             }
-            .price {
+            .price { // CSS for the price of each tour
                 color: $priceBlue;
                 background-color: $bodyBackground;
                 font-weight: 700;
@@ -51,12 +51,12 @@ $container-border-radius: .5rem;
                 padding: .3rem;
                 border-radius: .25rem;
             }
-            .info {
+            .info { // CSS for the information in each tour card
                 color: $textBlue;
                 font-size: $font-size/1.05;
                 display: inline;
             }
-            .readMore {
+            .readMore { // CSS for the Read More button
                 color: $priceBlue;
                 font-size: $font-size*1.05;
                 display: inline;
@@ -64,11 +64,11 @@ $container-border-radius: .5rem;
                     cursor: pointer;
                 }
             }
-            .notInterestedDiv {
+            .notInterestedDiv { // The container for the Not Interested button
                 display: flex;
                 margin: 1.5rem 0 0.8rem 0;
             }
-                .notInterested {
+                .notInterested { // CSS for the Not Interested Button
                     color: $notInterestedRed;
                     border: .1rem solid $notInterestedRed;
                     border-radius: .2rem;

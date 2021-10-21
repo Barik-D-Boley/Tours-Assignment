@@ -3,9 +3,6 @@ import React, { useState } from 'react'
 function TourBox({data}) {
     const { id, image, info, name, price } = data;
     const [readMore, setReadMore] = useState(false);
-    const [cities, setCities] = useState(data)
-
-    console.log(data);
 
     function removeCard(id) {
         document.getElementById(id).style.display = 'none';
@@ -19,12 +16,15 @@ function TourBox({data}) {
                     <p className='tourName'>{name}</p>
                     <p className='price'>${price}</p>
                 </div>
+                {/* Ternary statement that displays more or less information based on what the value of readMore is */}
                 {readMore ?
+                    // if readMore is selected, then it displays all the information
                     <>
                         <p className='info'>{info}</p>
                         <a className='readMore' onClick={() => setReadMore(false)}> Read Less</a>
                     </>
                     :
+                    // else the number of words is limited to the first 35
                     <>
                         <p className='info'>{info.split(' ').splice(0, 35).map((word) => {
                             return (
