@@ -36,6 +36,7 @@ function App() {
     return (
         <>
             <h1 id='title'>Our Tours</h1>
+            <button onClick={() => setIsError(true)}>Error</button>
             {/* Passes each set of data into the TourBox component */}
             <div className='cityCards'>
                 {city.map((card) => {
