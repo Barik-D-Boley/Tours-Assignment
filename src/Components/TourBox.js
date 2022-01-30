@@ -21,7 +21,7 @@ function TourBox({data}) {
                     // if readMore is selected, then it displays all the information
                     <>
                         <p className='info'>{info}</p>
-                        <a className='readMore' onClick={() => setReadMore(false)}> Read Less</a>
+                        <button className='readMore' onClick={() => setReadMore(false)}> Read Less</button>
                     </>
                     :
                     // else the number of words is limited to the first 35
@@ -31,10 +31,10 @@ function TourBox({data}) {
                                 word + ' '
                             )
                         })}</p>
-                        <a className='readMore' onClick={() => setReadMore(true)}> <p className='info'>...</p> Read More</a>
+                        <button className='readMore' onClick={() => setReadMore(true)}> <p className='info'>...</p> Read More</button>
                     </>
                 }
-                <div className='notInterestedDiv'><a className='notInterested' onClick={() => removeCard(id)}>Not Interested</a></div>
+                <div className='notInterestedDiv'><button className='notInterested' onClick={() => removeCard(id)}>Not Interested</button></div>
             </div>
         </div>
     )

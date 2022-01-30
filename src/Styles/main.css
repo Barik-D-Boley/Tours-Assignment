@@ -95,6 +95,8 @@ body {
   color: #489dd0;
   font-size: 1.365rem;
   display: inline;
+  background: none;
+  border: none;
 }
 .readMore:hover {
   cursor: pointer;

@@ -60,6 +60,8 @@ $container-border-radius: .5rem;
                 color: $priceBlue;
                 font-size: $font-size*1.05;
                 display: inline;
+                background: none;
+                border: none;
                 &:hover {
                     cursor: pointer;
                 }
